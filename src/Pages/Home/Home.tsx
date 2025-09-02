@@ -23,8 +23,9 @@ export default function Home() {
     return (
         <Page>
             <div className="about-container">
+                <img className="headshot" src={`${process.env.PUBLIC_URL}/Images/holly.jpeg`} alt="Holly wears glasses and is laughing, looking to the left." />
                 <div className="about-text">
-                    <p>
+                    <p className="first-paragraph">
                         I am a career switcher with 4 years&#8217; experience in editorial departments in the publishing industry, now looking for software development opportunities. As an editorial assistant and assistant editor, I was responsible for project managing books from acquisition to publication. Working with HTML and CSS for eBooks sparked my interest in further developing my technical skills.
                     </p>
                     <p>
@@ -34,7 +35,6 @@ export default function Home() {
                         In my spare time, I enjoy taking on challenging knitting projects and going to the cinema. I am based in London.
                     </p>
                 </div>
-                <img className="headshot" src={`${process.env.PUBLIC_URL}/Images/holly.jpeg`} alt="Holly wears glasses and is laughing, looking to the left." />
             </div>
             <h3>Skills</h3>
             <div className="skills-container">

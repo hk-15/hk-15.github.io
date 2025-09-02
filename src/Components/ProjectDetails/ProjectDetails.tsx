@@ -24,7 +24,7 @@ export const ProjectDetails: React.FC<Props> = ({ project }) => {
                 {project.description.map(paragraph => (
                     <p>{paragraph}</p>
                 ))}
-                <a href={project.gitHubLink} target="_blank">View on GitHub</a> {project.deployLink !== "" &&<span>| <a href={project.deployLink} target="_blank">Visit the deployed site</a></span>}
+                <a href={project.gitHubLink} target="_blank" rel="noreferrer">View on GitHub</a> {project.deployLink !== "" &&<span>| <a href={project.deployLink} target="_blank" rel="noreferrer">Visit the deployed site</a></span>}
             </div>
 
             <div className="carousel-container">

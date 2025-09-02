@@ -4,10 +4,11 @@
     display: flex;
 
     .projects-menu {
-        width: 20vw;
+        width: 30%;
 
         ul {
             padding: 0;
+            margin-top: 0;
         }
 
         li {
@@ -31,7 +32,7 @@
 
     .project-details-container {
         width: 70%;
-        
+
         .project-description {
             padding: 0 0 1.5rem 1.5rem;
 
@@ -47,7 +48,7 @@
         }
 
         .carousel-container {
-            width: 50vw;
+            width: 100%;
             text-align: center;
 
         }
@@ -55,6 +56,7 @@
         .slick-slider {
             box-shadow: -2rem 2rem 0 0 Constants.$primary-color;
         }
+
         .slick-prev:before,
         .slick-next:before {
             color: black;
@@ -63,6 +65,44 @@
         img {
             width: 35rem;
             margin: 0 auto;
-        } 
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .projects-container {
+        display: block;
+
+        .projects-menu {
+            li {
+                font-size: 1rem;
+                margin-bottom: .75rem;
+            }
+
+            .faded {
+                color: grey;
+            }
+
+            .faded:hover {
+                color: black;
+            }
+        }
+
+        .project-details-container {
+            width: 100%;
+
+            .project-description {
+                padding-left: 0;
+            }
+
+            .carousel-container {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .slick-slider {
+                box-shadow: -1rem 1rem 0 0 Constants.$primary-color;
+            }
+        }
     }
 }

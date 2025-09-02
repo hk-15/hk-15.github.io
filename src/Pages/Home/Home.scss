@@ -3,13 +3,18 @@
 .about-container {
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
 
     .about-text {
-        width: 35vw;
+        width: 50%;
+
+        .first-paragraph {
+            margin-top: 0;
+        }
     }
 
     .headshot {
-        width: 25vw;
+        width: 30%;
         height: 100%;
         box-shadow: -2rem 1rem 0 0 Constants.$primary-color;
     }
@@ -21,5 +26,22 @@
     svg {
         padding-right: .5rem;
         margin-right: .5rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .about-container {
+        display: block;
+
+        .about-text {
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        .headshot {
+            width: 70%;
+            display: block;
+            margin: 0 auto;
+        }
     }
 }

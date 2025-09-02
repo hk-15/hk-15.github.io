@@ -21,7 +21,7 @@ export default function Projects() {
         <div className="projects-menu">
         <ul>
         {projectData.map(project => (
-            <li className={project.title === selectedProject.title ? "selected" : ""}
+            <li className={project.title === selectedProject.title ? "selected" : "faded"}
             onClick={() => setSelectedProject(project)}
             >{project.title}</li>
         ))}
