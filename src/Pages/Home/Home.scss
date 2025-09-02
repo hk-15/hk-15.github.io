@@ -11,15 +11,6 @@
     .headshot {
         width: 25vw;
         height: 100%;
-    }
-
-    .headshot-offset {
-        background-color: Constants.$primary-color;
-        width: 25vw;
-        height: 25vw;
-        z-index: -1;
-        position: absolute;
-        right: 18%;
-        margin-top: 1.5rem;
+        box-shadow: -2rem 1rem 0 0 Constants.$primary-color;
     }
 }

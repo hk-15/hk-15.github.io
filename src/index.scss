@@ -33,7 +33,7 @@ h3 {
 
   .nav-header {
     background-color: Constants.$primary-color;
-    padding: 10% 15% 0;
+    padding: 5% 15% 0;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -41,11 +41,31 @@ h3 {
     h1 {
       font-size: 4rem;
       margin: 0;
+      
+      a {
+        text-decoration: none;
+        color: black;
+        transition: transform .2s
+      }
+
+      a:hover {
+        font-weight: lighter;
+      }
     }
 
     .nav-link {
       text-decoration: none;
-      padding-left: 2rem;
+      padding-left: 3rem;
+      color: black;
+      font-size: 1.5rem;
+    }
+
+    a.nav-link:hover {
+      font-weight: bold;
+    }
+    a.nav-link.active {
+      font-size: 2rem;
+      font-weight: bold;
     }
   }
 

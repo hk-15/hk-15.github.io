@@ -1,5 +1,4 @@
 import { Page } from "../Page/Page";
-import headshot from '../../Images/holly.jpeg';
 import './Home.scss';
 
 export default function Home() {
@@ -7,7 +6,6 @@ export default function Home() {
         <Page>
             <div className="about-container">
                 <div className="about-text">
-                    <h2>About</h2>
                     <p>
                         I am a career switcher with 4 years&#8217; experience in editorial departments in the publishing industry, now looking for software development opportunities. As an editorial assistant and assistant editor, I was responsible for project managing books from acquisition to publication. Working with HTML and CSS for eBooks sparked my interest in further developing my technical skills.
                     </p>
@@ -18,8 +16,7 @@ export default function Home() {
                         In my spare time, I enjoy taking on challenging knitting projects and going to the cinema. I am based in London.
                     </p>
                 </div>
-                <img className="headshot" src={headshot} alt="Holly wears glasses and is laughing, looking to the left." />
-                <div className="headshot-offset"></div>
+                <img className="headshot" src={`${process.env.PUBLIC_URL}/Images/holly.jpeg`} alt="Holly wears glasses and is laughing, looking to the left." />
             </div>
             <h3>Skills</h3>
         </Page>
