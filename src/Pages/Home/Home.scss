@@ -14,3 +14,12 @@
         box-shadow: -2rem 1rem 0 0 Constants.$primary-color;
     }
 }
+
+.skills-container {
+    font-size: 1.75rem;
+
+    svg {
+        padding-right: .5rem;
+        margin-right: .5rem;
+    }
+}

@@ -24,13 +24,13 @@ export const ProjectDetails: React.FC<Props> = ({ project }) => {
                 {project.description.map(paragraph => (
                     <p>{paragraph}</p>
                 ))}
-                <a href={project.gitHubLink} target="blank">View on GitHub</a> {project.deployLink !== "" &&<span>| <a href={project.deployLink} target="blank">Visit the deployed site</a></span>}
+                <a href={project.gitHubLink} target="_blank">View on GitHub</a> {project.deployLink !== "" &&<span>| <a href={project.deployLink} target="_blank">Visit the deployed site</a></span>}
             </div>
 
             <div className="carousel-container">
                 <Slider {...sliderSettings}>
                     {project.images.map(image => (
-                        <img key={image.name} src={`${process.env.PUBLIC_URL}/Images/${image.name}`} className={image.name.includes("mobile") ? "mobile" : ""} alt={image.alt} />
+                        <img key={image.name} src={`${process.env.PUBLIC_URL}/Images/${image.name}`} alt={image.alt} />
                     ))}
                 </Slider>
             </div>

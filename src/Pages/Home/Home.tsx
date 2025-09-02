@@ -1,5 +1,23 @@
 import { Page } from "../Page/Page";
 import './Home.scss';
+import { TbBrandCSharp } from "react-icons/tb";
+import { BiLogoTypescript } from "react-icons/bi";
+import { RiJavascriptFill } from "react-icons/ri";
+import { FaPython } from "react-icons/fa";
+import { TbSql } from "react-icons/tb";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaSass } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { FaBootstrap } from "react-icons/fa";
+import { AiOutlineDotNet } from "react-icons/ai";
+import { SiMocha } from "react-icons/si";
+import { SiJest } from "react-icons/si";
+import { FaGit } from "react-icons/fa";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiSwagger } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
+
 
 export default function Home() {
     return (
@@ -19,6 +37,25 @@ export default function Home() {
                 <img className="headshot" src={`${process.env.PUBLIC_URL}/Images/holly.jpeg`} alt="Holly wears glasses and is laughing, looking to the left." />
             </div>
             <h3>Skills</h3>
+            <div className="skills-container">
+                <TbBrandCSharp />
+                <BiLogoTypescript />
+                <RiJavascriptFill />
+                <FaPython />
+                <TbSql />
+                <FaHtml5 />
+                <FaCss3Alt />
+                <FaSass />
+                <FaReact />
+                <FaBootstrap />
+                <AiOutlineDotNet />
+                <SiMocha />
+                <SiJest />
+                <FaGit />
+                <BiLogoPostgresql />
+                <SiSwagger />
+                <SiPostman />
+            </div>
         </Page>
     )
 }
