@@ -58,13 +58,13 @@ export const projectData: Project[] = [
             }
         ],
         gitHubLink: "https://github.com/techswitch-learners/whale-watching-june-25",
-        deployLink: "https://whale-watching-june-25.onrender.com/"
+        deployLink: ""
     },
     {
         title: "Mars Mission",
         description: [
             "As part of the TechSwitch bootcamp, we spent four days developing a prototype website aimed to allow children aged 11–16 to explore information and content returned by NASA’s APIs. As a group of nine, we created a wireframe and set out our development goals, choosing an agile approach.",
-            "The website allows a user to see interesting pictures highlighted by NASA, find out more about the Mars Rovers, explore pictures taken by the Rovers and build their own Mars Profile to find out their age on Mars.",
+            "The website allows a user to see interesting pictures highlighted by NASA, find out more about the Mars Rovers, explore pictures taken by the Rovers, and build their own Mars Profile to find out their age on Mars.",
             "In my group of three, we developed the component that fetches images from the Mars Rover Photos API and displays them in a carousel. We also wrote a suite of tests in Jest to support the component.", 
             "After four days of planning and development, we delivered a working prototype."
         ],

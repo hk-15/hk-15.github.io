@@ -29,6 +29,14 @@
     }
 }
 
+@media (max-width: 800px) {
+.about-container {
+    .about-text {
+        width: 60%;
+    }
+}
+}
+
 @media (max-width: 425px) {
     .about-container {
         display: block;

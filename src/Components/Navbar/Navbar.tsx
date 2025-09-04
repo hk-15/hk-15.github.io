@@ -11,6 +11,7 @@ export function Navbar () {
                 <NavLink className="nav-link" to="/contact">Contact</NavLink>
             </nav>
         </header>
+        <div className="header-alignment"></div>
         </div>
     )
 };
